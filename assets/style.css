@@ -1,0 +1,181 @@
+body{
+	font-family: "Helvetica"
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+*{
+	box-sizing: border-box; 
+}
+
+a {
+	text-decoration: none;
+}
+.ricardo {
+	position: relative;
+	width: 380px;
+	height: 600px;
+}
+
+.ricardo__hair {
+	position: absolute;
+	left: -20px;
+	width: 420px;		
+	height: 320px;
+	background-color: #030200;
+	border-radius: 200px 200px 0 0; 
+}
+
+.face {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;	
+	background-color: #573917;
+	border-radius: 50%;
+}
+
+.face__chup {
+	position: absolute;
+	background-color: #ba001f;
+	top: -80px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 10px 110px 80px 80px;
+	width: 260px;
+	height: 170px; 
+}
+
+.face__middle {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 200px;
+	height: 100px;
+}
+
+.ear {
+	position: absolute;
+	top: 0;
+	height: 150px;
+	width: 80px;
+	background-color: #573917;
+	border-radius: 40%;
+}
+
+.ear:before {
+	position: absolute;
+	bottom: 20px;
+	display: block;
+	content: "";
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: salmon;
+}
+
+.ear.-left {
+	 left: -50px;
+}
+
+.ear.-left:before {
+	right: 25px;
+}
+
+.ear.-right:before {
+	left: 25px;
+}
+
+.ear.-right {
+	 right: -50px;
+}
+
+
+.eye {
+	position:  absolute;
+	height: 50px;
+	width: 20px;
+	background-color: black;
+	border-radius: 40%;
+}
+
+.eye.-left {
+	left: 100px;
+} 
+
+.eye.-right {
+	right: 100px;
+}
+
+.nose {
+	position: absolute;
+	width: 115px;
+	height: 200px;
+	background-color: #2b1500;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50px 50px 5px 5px;
+}
+
+.nose:before {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 10px solid #ffa29c;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -30px;
+}
+
+.nose:after {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 9px solid #ffa29c;
+	background-color: red;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -40px;
+}
+
+.eyebrows {
+	border-radius: 15px 3px 15px 3px;
+	height: 40px;
+	width: 75px; 
+}
+
+.eyebrows.-left {
+	position: absolute;
+	background-color: black;
+	left: 80px;
+	top: -30px;
+
+}
+
+.eyebrows.-right {
+	position: absolute;
+	background-color: black;
+	right: 80px;
+	top: -55px;
+}
+
+.mouth {
+	position: absolute;
+	left: 50%;
+	width: 200px;
+	height: 30px;
+	transform: translateX(-50%);
+	bottom: 125px; 
+	border-radius: 50%;
+	border-bottom: 15px solid black;
+}
